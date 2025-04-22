@@ -1,0 +1,11 @@
+config JSMN_LIB
+	  bool "Enable jsmn"
+	  help
+	    This option enables jsmn as a Zephyr module.
+
+if JSMN_LIB
+
+config JSMN_PARENT_LINKS
+    bool "activate parent links in tokens"
+
+endif # JSMN_LIB
